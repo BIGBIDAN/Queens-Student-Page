@@ -15,11 +15,19 @@ header { background:var(--blue); color:#fff; padding:1rem; }
 main { background: rgba(0, 0, 0, 0.65);  /* 85% 透明白色背景 */
   color: #ffffff;
   max-width: 900px;
-  margin-left: 2rem 2rem 2rem 2rem;
+  margin-left: auto;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   border-radius: 12px;
   padding: 1.5rem;
   backdrop-filter: blur(10px);  /* 毛玻璃效果 */
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); }
+p {
+  line-height: 1.6;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  }
 a { color: var(--gold); text-decoration: underline; }
 /* === personalize below by changing colors or spacing === */
 /* example: make headings blue and a bit larger */
