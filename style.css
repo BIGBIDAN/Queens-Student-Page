@@ -13,14 +13,13 @@
 body { font-family: "FangSong", "Times New Roman", serif; margin:0; background:var(--red); color:#fff; }
 header { background:var(--blue); color:#fff; padding:1rem; }
 main { background: rgba(255, 255, 255, 0.35);  
-  color: #ffffff;
+  color: #1a1a1a;
   max-width: 900px;
-  margin-left: auto;
-  margin: 2rem 2rem 2rem 2rem
+  margin-left: 2rem auto;
   border-radius: 12px;
   padding: 1.5rem;
   backdrop-filter: blur(10px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 .about-section {
   display: flex;
@@ -30,7 +29,7 @@ main { background: rgba(255, 255, 255, 0.35);
 p {
   line-height: 1.6;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  color: #ffffff;
+  color: #1a1a1a;
 }
 a { color: var(--gold); text-decoration: underline; }
 /* === personalize below by changing colors or spacing === */
