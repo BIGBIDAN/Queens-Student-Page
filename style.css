@@ -1,5 +1,5 @@
 :root {
-  --red:#b90e31; --gold:#fabd0f; --blue:#334155;
+  --red:#b90e31; --gold:#fabd0f; --blue:#c1d9f2;
 }
 #bg-video {
   position: fixed;
@@ -26,6 +26,8 @@ main { background: rgba(255, 255, 255, 0.35);
   align-items: center;
   gap: 20px;
 }
+
+h1 { color: var(--gold); font-size: 2rem; }
 p {
   line-height: 1.6;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
