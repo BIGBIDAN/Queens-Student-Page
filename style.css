@@ -14,8 +14,8 @@ body { font-family: "FangSong", "Times New Roman", serif; margin:0; background:v
 header { background:var(--blue); color:#fff; padding:1rem; }
 main { background: rgba(255, 255, 255, 0.35);  
   color: #1a1a1a;
-  max-width: 900px;
-  margin-left: 2rem auto;
+  max-width: 650px;
+  margin-left: 3rem;
   border-radius: 12px;
   padding: 1.5rem;
   backdrop-filter: blur(10px);
