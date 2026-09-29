@@ -12,7 +12,14 @@
 }
 body { font-family: "FangSong", "Times New Roman", serif; margin:0; background:var(--red); color:#fff; }
 header { background:var(--blue); color:#fff; padding:1rem; }
-main { background:#fff; color:#1a1a1a; max-width:900px; margin:2rem auto; border-radius:12px; padding:1.5rem; }
+main { background: rgba(255, 255, 255, 0.85);  /* 85% 透明白色背景 */
+  color: #1a1a1a;
+  max-width: 900px;
+  margin: 2rem auto;
+  border-radius: 12px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);  /* 毛玻璃效果 */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); }
 a { color: var(--blue); }
 /* === personalize below by changing colors or spacing === */
 /* example: make headings blue and a bit larger */
