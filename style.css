@@ -12,13 +12,11 @@
 }
 body { font-family: "FangSong", "Times New Roman", serif; margin:0; background:var(--red); color:#fff; }
 header { background:var(--blue); color:#fff; padding:1rem; }
-main { background: rgba(0, 0, 0, 0.65);  
+main { background: rgba(255, 255, 255, 0.35);  
   color: #ffffff;
   max-width: 900px;
   margin-left: auto;
-  margin-right: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem 2rem 2rem 2rem
   border-radius: 12px;
   padding: 1.5rem;
   backdrop-filter: blur(10px);
