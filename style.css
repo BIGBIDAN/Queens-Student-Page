@@ -10,7 +10,7 @@
   object-fit: cover;
   z-index: -1;
 }
-body { font-family: "FangSong", "Times New Roman", serif; margin:0; background:url('BR#.png') center/cover no-repeat; color:#fff; }
+body { font-family: "FangSong", "Times New Roman", serif; margin:0; background:url('BR3.png') center/cover no-repeat; color:#fff; }
 header { background:var(--blue); color:#fff; padding:1rem; }
 main { background: rgba(255, 255, 255, 0.35);  
   color: #1a1a1a;
