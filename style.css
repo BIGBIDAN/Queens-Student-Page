@@ -1,6 +1,15 @@
 :root {
   --red:#b90e31; --gold:#fabd0f; --blue:#002452;
 }
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
 body { font-family: "FangSong", "Times New Roman", serif; margin:0; background:var(--red); color:#fff; }
 header { background:var(--blue); color:#fff; padding:1rem; }
 main { background:#fff; color:#1a1a1a; max-width:900px; margin:2rem auto; border-radius:12px; padding:1.5rem; }
