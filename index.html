@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Wu吴</title>
     <link rel="stylesheet" href="style.css"/> <!-- do not change this line -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75'>吴</text></svg>">
   </head>
   <body>
-    <video autoplay muted loop id="bg-video">
-    <source src="BR3.mp4" type="video/mp4">
+    <video
+      autoplay
+      muted
+      loop
+      id="bg-video"
+      preload="auto"
+      style="background: #000;">
+    <source src="https://res.cloudinary.com/bstmjdg5/video/upload/v1790912884/BR-1440H.mp4" type="video/mp4">
     </video>
     <header>
       <h1 style="text-align: center;">Wu吴</h1> <!-- change this heading to your name -->
@@ -17,29 +24,59 @@
     <main>
       <!-- ====== ABOUT SECTION (edit the text) ====== -->
       <div style="text-align: center;">
-       <img src="me.png" alt="Your Name portrait" width="248" height="248" />
+       <img src="me.png" alt="Wu's portrait" width="248" height="248" />
       </div>
       <h2 style="text-align: center;">Wu吴</h2>
       <p style="text-align: center;">Queen's School of Computing</p>
       <h2 style="text-align: center;">Things About Myself</h2>
       <p style="text-align: center;">30s'student at Queen's School of Computing.</p> 
-      <p style="text-align: center;">Interested in archery🏹, gaming🎮 and ski🎿<!-- replace with interests -->.</p>
+      <p style="text-align: center;">Interested in archery🏹, gaming🎮 and ski🎿!<!-- replace with interests -->.</p>
       <div style="text-align: center;">
-        <img src="me2.png" alt="Your Name portrait" width="248" height="300" />
+        <img src="me2.png" alt="Wu's habbit portrait" width="248" height="300" />
       </div>
       <!-- ====== PHOTO (upload me.jpg to repo root, then update the src below) ====== -->
      
       <!-- ====== PROJECTS/COURSES (add or rename items to courses instead of projects) ====== -->
       <h2 style="text-align: center;">Projects</h2>
-      
-        <p style="text-align: center;">Project One — 2D side-scrolling shooter “Egg Man's Revenge”</p>
-        <p style="text-align: center;">Project Two — coming soon.</p>
-      
+
+      <ul>
+          <li style="text-align: center;">Project One — 2D side-scrolling shooter “Egg Man's Revenge”</li>
+          <li style="text-align: center;">Project Two — coming soon.</li>
+      </ul>      
 
       <!-- ====== CONTACT (update your links) ====== -->
       <h2 style="text-align: center;">Contact</h2>
-      <p style="text-align: center;">Email: <a href="mailto:student@queensu.ca">26abc.student@queensu.ca</a></p>
-      <p style="text-align: center;">Phone number: <a href="#">345-6789-10JQK</a></p>
+      <p style="text-align: center;">Email: <a href="mailto:26abc.student@queensu.ca">26abc.student@queensu.ca</a></p>
+      <p style="text-align: center;">Phone number: 345-6789-10JQK</p>
+      <!-- ====== Intentionally Fake Contact ====== -->
     </main>
+
+    <script>
+      const video = document.getElementById('bg-video');
+      
+      // 立即预加载
+      video.load();
+      
+      // 只缓冲前 2 秒就开始播放
+      video.addEventListener('progress', () => {
+        if (video.buffered.length > 0) {
+          const bufferedSeconds = video.buffered.end(0);
+          if (bufferedSeconds >= 2 && video.paused) {
+            video.play().catch(err => console.log('Play error:', err));
+          }
+        }
+      });
+      
+      // 循环过渡
+      video.addEventListener('ended', function() {
+        this.style.opacity = '0';
+        setTimeout(() => {
+          this.currentTime = 0;
+          this.play();
+          this.style.opacity = '1';
+        }, 300);
+      });
+    </script>
+  
   </body>
 </html>
