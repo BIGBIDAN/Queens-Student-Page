@@ -16,7 +16,13 @@ body {
   
   color: #fff; 
 }
-header { background:var(--blue); color:#fff; padding:1rem; }
+header { 
+  background: rgba(0, 0, 0, 0.3); /* 透明黑色背景（可选）*/
+  /* 或者完全透明 */
+  /* background: transparent; */
+  color:#fff; 
+  padding:1rem; 
+}
 main { background: rgba(255, 255, 255, 0.35);  
   color: #1a1a1a;
   max-width: 650px;
