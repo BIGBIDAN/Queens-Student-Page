@@ -50,5 +50,30 @@
       <p style="text-align: center;">Phone number: 345-6789-10JQK</p>
       <!-- ====== Intentionally Fake Contact ====== -->
     </main>
+
+    // 立即预加载
+      video.load();
+      
+      // 只缓冲前 2 秒就开始播放
+      video.addEventListener('progress', () => {
+        if (video.buffered.length > 0) {
+          const bufferedSeconds = video.buffered.end(0);
+          if (bufferedSeconds >= 2 && video.paused) {
+            video.play().catch(err => console.log('Play error:', err));
+          }
+        }
+      });
+      
+      // 循环过渡
+      video.addEventListener('ended', function() {
+        this.style.opacity = '0';
+        setTimeout(() => {
+          this.currentTime = 0;
+          this.play();
+          this.style.opacity = '1';
+        }, 300);
+      });
+    </script>
+  
   </body>
 </html>
